@@ -1,0 +1,120 @@
+/* Bootstrap simplifies our workflow, but it's still helpful to add our own CSS */
+/* This file will include CSS to override Bootstrap defaults */
+
+/* Typography */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bree Serif', serif;
+}
+
+/* prevent badges from using the heavier Bree font */
+.badge {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Wordmark */
+
+#wordmark { /* navbar logo font */
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4em;
+}
+
+#wordmark span { /* navbar & font */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+#wordmark svg { /* make the navbar paw icon white */
+    fill: white;
+}
+
+/* Hero */
+
+#hero {
+    background-image: url("../img/sabbath.jpg");
+    background-size: cover;
+    background-position: 50% 30%; /* positioning the background image */
+    background-blend-mode: soft-light;
+}
+
+#chumly #hero {
+    background-image: url("../img/chumly.jpg");
+}
+
+
+#humans #hero {
+    background-image: url("../img/human.jpg");
+}
+
+
+#chumly #numbers {
+    background-image: url("../img/dandelions.jpg");
+    background-size: cover;
+    background-position: 50% 30%; /* positioning the background image */
+    background-blend-mode: soft-light;
+}
+
+#chumly #numbers .row {
+    background-color: #ffffff66;
+}
+
+/* progress bar styling */
+#chumly .progress {
+    height: 100%;
+}
+
+
+#friends #hero span.masha{
+    color: sienna;
+    background-color: white;
+}
+
+#friends #hero span.jack{
+    color: black;
+    background-color: white;
+}
+
+#friends #hero {
+    background-image: none;
+}
+
+#friends #hero video {
+    object-fit: cover; /* size video just enough to cover its container */
+    mix-blend-mode: soft-light; /* blend mode option for non background elements */
+}
+
+/* darken carousel text background for readability */
+#friends .carousel-caption {
+    background: #00000066;
+}
+
+/* purple background */
+.bg-dark {
+    background-color: #382d44 !important;
+}
+
+/* purple background for dropdown menus */
+.dropdown-menu-dark {
+    background-color: #2e2538 !important;
+}
+
+/* purple background for organizations list */
+.bg-secondary {
+    background-color: #978ca3 !important;
+}
+
+/* purple background for active link in nav dropdown */
+.dropdown-menu-dark .dropdown-item.active,
+.dropdown-menu-dark .dropdown-item:active {
+    background-color: #59377e !important;
+}
+
+.bg-info {
+    background-color: #e6dbac !important;
+}
